@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bringing Web Pages to Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>✨ CSS + JavaScript Magic ✨</h1>
+
+  <!-- Part 1: Buttons with CSS hover animation -->
+  <button class="animated-btn">Hover Me</button>
+
+  <!-- Part 3: Box animation triggered by JS -->
+  <div class="box"></div>
+  <button onclick="animateBox()">Animate Box</button>
+
+  <!-- Part 3: Popup Modal -->
+  <button onclick="toggleModal()">Show Modal</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p>This is a modal with CSS animation 🎬</p>
+      <button onclick="toggleModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
