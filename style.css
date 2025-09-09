@@ -1,0 +1,56 @@
+/* ======================
+   Part 1: CSS Animations
+   ====================== */
+
+/* Button hover transition */
+.animated-btn {
+  padding: 12px 20px;
+  background: royalblue;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+  background: darkblue;
+}
+
+/* Box for JS animation */
+.box {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  margin: 20px auto;
+  transition: transform 1s ease-in-out;
+}
+
+/* Class added dynamically by JS */
+.box.animate {
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  animation: slideIn 0.5s forwards;
+}
+
+/* Keyframe animation for modal */
+@keyframes slideIn {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
